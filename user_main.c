@@ -62,7 +62,7 @@ user_rf_cal_sector_set(void)
 
 void application_function(void *pData)
 {
-	SmokeDetectorResponse lastMeasurement;
+
 	count++;
 	os_printf("count - %d\n", count);
 
@@ -97,6 +97,8 @@ void application_function(void *pData)
 //// SB END WORKS
 
 
+	SmokeDetectorResponse lastMeasurement;
+
 	i2c_master_start();
 	i2c_master_writeByte(SMOKE_DETECTOR_ADDRESS);
 	i2c_master_checkAck(); // TODO: Find out why this doesnt return true all the time
@@ -126,6 +128,9 @@ void application_function(void *pData)
 	os_printf("resistance: %d \r\n", lastMeasurement.resistance);
 	os_printf("tvocPPB: %d \r\n", lastMeasurement.tvocPPB);
 
+	// TODO: Check wifi connection status
+
+	// TODO: Send email if CO2PPM > threshold
 
 	////////////////////////////////////////////////////
 	if(count % 2)
@@ -153,6 +158,7 @@ void user_init(void)
 	//I2C master Init
 	i2c_master_gpio_init(13,4,100000);
 
+	// Start timer that will call our application function repeatedly
 	os_timer_setfn(&application_timer, (os_timer_func_t *)application_function, NULL);
 	os_timer_arm(&application_timer, 1000, 1);
 }
