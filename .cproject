@@ -20,11 +20,12 @@
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.PE" id="cdt.managedbuild.target.gnu.platform.mingw.base.151802408" name="Debug Platform" osList="win32" superClass="cdt.managedbuild.target.gnu.platform.mingw.base"/>
 							<builder id="cdt.managedbuild.toolchain.gnu.mingw.base.563459839.1537149070" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
 							<tool id="cdt.managedbuild.tool.gnu.assembler.mingw.base.282973487" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.mingw.base">
-								<option id="gnu.both.asm.option.include.paths.60520246" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+								<option id="gnu.both.asm.option.include.paths.60520246" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;C:\Users\Scott\Documents\Dev\ESP8266_Projects\ESP8266_RTOS_SDK\include\espressif&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Users\Scott\Documents\Dev\ESP8266_Projects\ESP8266_RTOS_SDK\include\espressif\esp8266&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Users\Scott\Documents\Dev\ESP8266_Projects\ESP8266_RTOS_SDK\include\json&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Users\Scott\Documents\Dev\ESP8266_Projects\ESP8266_RTOS_SDK\include\lwip&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Users\Scott\Documents\Dev\ESP8266_Projects\ESP8266_NONOS_SDK\include&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1250358781" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -32,12 +33,7 @@
 							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1969870320" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base"/>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.mingw.base.2017411448" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.mingw.base">
 								<option id="gnu.c.compiler.option.include.paths.821130975" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;C:\Users\Scott\Documents\Dev\ESP8266_Projects\ESP8266_RTOS_SDK\include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\Scott\Documents\Dev\ESP8266_Projects\ESP8266_RTOS_SDK\include\espressif&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\Scott\Documents\Dev\ESP8266_Projects\ESP8266_RTOS_SDK\include\espressif\esp8266&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\Scott\Documents\Dev\ESP8266_Projects\ESP8266_RTOS_SDK\include\freertos&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\Scott\Documents\Dev\ESP8266_Projects\ESP8266_RTOS_SDK\include\json&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\Scott\Documents\Dev\ESP8266_Projects\ESP8266_RTOS_SDK\include\lwip&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Users\Scott\Documents\Dev\ESP8266_Projects\ESP8266_NONOS_SDK\include&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.629262276" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
@@ -98,4 +94,5 @@
 			</target>
 		</buildTargets>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>
