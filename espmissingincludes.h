@@ -18,6 +18,7 @@
 
 #include <user_interface.h>
 #include <eagle_soc.h>
+#include "uart.h"
 
 // The linking is arranged to put all functions into IROM, so we need a special define to put
 // a function into IRAM
